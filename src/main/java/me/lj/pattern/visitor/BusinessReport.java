@@ -3,22 +3,22 @@ package me.lj.pattern.visitor;
 import java.util.LinkedList;
 import java.util.List;
 
-//员工业务报表类（ObjectStructure）
+//鍛樺伐涓氬姟鎶ヨ〃绫伙紙ObjectStructure锛?
 public class BusinessReport {
 
 	List<Staff> mStaffs = new LinkedList<Staff>();
 
 	public BusinessReport() {
-		mStaffs.add(new Manager("王经理"));
-		mStaffs.add(new Engineer("攻城狮-A"));
-		mStaffs.add(new Engineer("攻城狮-B"));
-		mStaffs.add(new Manager("李经理"));
-		mStaffs.add(new Engineer("攻城狮-C"));
+		mStaffs.add(new Manager("鐜嬬粡鐞?"));
+		mStaffs.add(new Engineer("鏀诲煄鐙?-A"));
+		mStaffs.add(new Engineer("鏀诲煄鐙?-B"));
+		mStaffs.add(new Manager("鏉庣粡鐞?"));
+		mStaffs.add(new Engineer("鏀诲煄鐙?-C"));
 	}
 	
 	/**
-	 * 为访问者展示报表 
-	 * @param visitor 如CEO、CTO
+	 * 涓鸿闂?呭睍绀烘姤琛? 
+	 * @param visitor 濡侰EO銆丆TO
 	 */
 	public void showReport(Visitor visitor){
 		for(Staff staff : mStaffs){

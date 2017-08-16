@@ -2,7 +2,7 @@ package me.lj.pattern.proxy;
 
 public class Lawyer implements ILawsuit{
 
-	private ILawsuit mLawsuit; //持有一个具体被代理者的引用
+	private ILawsuit mLawsuit; //鎸佹湁涓?涓叿浣撹浠ｇ悊鑰呯殑寮曠敤
 	
 	public Lawyer(ILawsuit lawsuit) {
 		this.mLawsuit = lawsuit;

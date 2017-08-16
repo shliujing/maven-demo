@@ -4,8 +4,8 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class TicketFactory {
-	static Map<String, Ticket> sTicketMap = new ConcurrentHashMap<String, Ticket>();
-
+	static Map<String, Ticket> sTicketMap = new ConcurrentHashMap<String, Ticket>(); 
+	
 	public static Ticket getTicket(String from ,String to){
 		String key = from + "-" + to;
 		if(sTicketMap.containsKey(key)){
@@ -17,6 +17,6 @@ public class TicketFactory {
 			sTicketMap.put(key, ticket);
 			return ticket;
 		}
-
+	
 	}
 }

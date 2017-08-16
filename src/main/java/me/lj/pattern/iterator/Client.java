@@ -11,9 +11,9 @@ public class Client {
 		groupLeader.nextHandler = director;
 		director.nextHandler = manager;
 		manager.nextHandler = boss;
-
+		
 		//发起报账申请
 		groupLeader.handleRequest(8000);
-
+		
 	}
 }

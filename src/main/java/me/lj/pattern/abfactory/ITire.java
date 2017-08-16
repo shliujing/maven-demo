@@ -2,7 +2,7 @@ package me.lj.pattern.abfactory;
 
 public interface ITire {
 	/**
-	 * ÂÖÌ¥ 
+	 * è½®èƒ 
 	 */
 	void tire();
 }

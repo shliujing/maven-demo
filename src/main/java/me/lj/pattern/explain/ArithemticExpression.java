@@ -1,11 +1,11 @@
-package com.zl.pattern.explain;
+package me.lj.pattern.explain;
 
 public abstract class ArithemticExpression {
 	/**
-	 * 抽象的解析方法 
-	 * 具体的解析逻辑由具体的子类实现
+	 * 鎶借薄鐨勮В鏋愭柟娉? 
+	 * 鍏蜂綋鐨勮В鏋愰?昏緫鐢卞叿浣撶殑瀛愮被瀹炵幇
 	 * 
-	 * @return 解析得到具体的值
+	 * @return 瑙ｆ瀽寰楀埌鍏蜂綋鐨勫??
 	 */
 	public abstract int interpreter();
 }

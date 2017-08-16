@@ -2,7 +2,7 @@ package me.lj.pattern.command;
 
 public class DownCommand implements Command{
 
-	//³ÖÓÐÒ»¸ö½ÓÊÜÍÆÏä×ÓÓÎÏ·¶ÔÏóµÄÒýÓÃ
+	//æŒæœ‰ä¸€ä¸ªæŽ¥å—æŽ¨ç®±å­æ¸¸æˆå¯¹è±¡çš„å¼•ç”¨
 	private PushBox pushBox;
 	
 	public DownCommand(PushBox pushBox){
@@ -11,13 +11,13 @@ public class DownCommand implements Command{
 	
 	@Override
 	public void execute() {
-		//µ÷ÓÃ¾ßÌåÃüÁî
+		//è°ƒç”¨å…·ä½“å‘½ä»¤
 		pushBox.toDown();
 	}
 
 	@Override
 	public void getCommand() {
-		System.out.print("ÏòÏÂ-->");
+		System.out.print("å‘ä¸‹-->");
 	}
 }
 

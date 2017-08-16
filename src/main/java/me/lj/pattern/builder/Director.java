@@ -1,15 +1,15 @@
 package me.lj.pattern.builder;
 
-//Director 类，负责制造
+//Director 绫伙紝璐熻矗鍒堕??
 public class Director {
 
 	private Builder builder;
 
 	public Director( Builder builder ) { 
 		this.builder = builder; 
-	}	// 将部件partA partB partC最后组成复杂对象
+	}	// 灏嗛儴浠秔artA partB partC鏈?鍚庣粍鎴愬鏉傚璞?
 
-	// 这里是将车轮 方向盘和发动机组装成汽车的过程
+	// 杩欓噷鏄皢杞﹁疆 鏂瑰悜鐩樺拰鍙戝姩鏈虹粍瑁呮垚姹借溅鐨勮繃绋?
 	public void construct() { 
 		
 		builder.buildPartA();

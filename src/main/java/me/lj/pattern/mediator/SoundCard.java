@@ -7,11 +7,11 @@ public class SoundCard extends Colleague{
 	}
 
 	/**
-	 * ������Ƶ����
+	 * 播放音频数据
 	 * 
-	 * @param ��Ƶ����
+	 * @param 音频数据
 	 */
 	public void soundPlay(String data){
-		System.out.println("��Ƶ��" + data);
+		System.out.println("音频：" + data);
 	}
 }

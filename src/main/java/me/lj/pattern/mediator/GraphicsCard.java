@@ -7,11 +7,11 @@ public class GraphicsCard extends Colleague{
 	}
 
 	/**
-	 * ������Ƶ����
+	 * 播放视频数据
 	 * 
-	 * @param ��Ƶ����
+	 * @param 视频数据
 	 */
 	public void videoPlay(String data){
-		System.out.println("��Ƶ��" + data);
+		System.out.println("视频：" + data);
 	}
 }

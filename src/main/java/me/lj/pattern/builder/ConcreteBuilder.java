@@ -6,25 +6,25 @@ public class ConcreteBuilder implements Builder {
 	
 	@Override
 	public void buildPartA() {
-		//这里是具体如何构建partA的代码
-		System.out.println("构建partA");
+		//杩欓噷鏄叿浣撳浣曟瀯寤簆artA鐨勪唬鐮?
+		System.out.println("鏋勫缓partA");
 	}
 
 	@Override
 	public void buildPartB() {
-		//这里是具体如何构建partB的代码
-		System.out.println("构建partB");
+		//杩欓噷鏄叿浣撳浣曟瀯寤簆artB鐨勪唬鐮?
+		System.out.println("鏋勫缓partB");
 	}
 
 	@Override
 	public void buildPartC() {
-		//这里是具体如何构建partC的代码
-		System.out.println("构建partC");
+		//杩欓噷鏄叿浣撳浣曟瀯寤簆artC鐨勪唬鐮?
+		System.out.println("鏋勫缓partC");
 	}
 
 	@Override
 	public Product getResult() {
-		//返回最后组装成品结果
+		//杩斿洖鏈?鍚庣粍瑁呮垚鍝佺粨鏋?
 		return null;
 	} 
 	

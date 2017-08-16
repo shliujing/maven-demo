@@ -1,16 +1,16 @@
-package com.zl.pattern.cursor;
+package me.lj.pattern.cursor;
 
 public interface Iterator {
 
 	/**
-	 * ÊÇ·ñ»¹ÓĞÏÂÒ»¸öÔªËØ 
+	 * æ˜¯å¦è¿˜æœ‰ä¸‹ä¸€ä¸ªå…ƒç´  
 	 * 
-	 * @return true±íÊ¾ÓĞ£¬false±íÊ¾Ã»ÓĞ
+	 * @return trueè¡¨ç¤ºæœ‰ï¼Œfalseè¡¨ç¤ºæ²¡æœ‰
 	 */
 	boolean hasNext();
 	
 	/**
-	 * ·µ»Øµ±Ç°ÔªËØ£¬²¢½«Î»ÖÃÒÆÖÁÏÂÒ»Î»
+	 * è¿”å›å½“å‰å…ƒç´ ï¼Œå¹¶å°†ä½ç½®ç§»è‡³ä¸‹ä¸€ä½
 	 */
 	Object next();
 }

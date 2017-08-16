@@ -9,12 +9,12 @@ public class Director extends Leader{
 
 	@Override
 	public void handle(int money) {
-		System.out.println("Ö÷¹ÜÅú¸´±¨Ïú"+ money +"Ôª");
+		System.out.println("ä¸»ç®¡æ‰¹å¤æŠ¥é”€"+ money +"å…ƒ");
 	}
 
 	@Override
 	public String getLeader() {
-		return "µ±Ç°ÊÇÖ÷¹Ü";
+		return "å½“å‰æ˜¯ä¸»ç®¡";
 	}
 
 }

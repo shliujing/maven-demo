@@ -1,7 +1,7 @@
 package me.lj.pattern.state;
 
 /**
- * 电源操作接口
+ * 鐢垫簮鎿嶄綔鎺ュ彛
  * 
  * */
 public interface PowerController {

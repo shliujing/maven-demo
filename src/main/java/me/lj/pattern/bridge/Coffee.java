@@ -9,7 +9,7 @@ public abstract class Coffee{
 	}
 	
 	/**
-	 * 咖啡具体什么样由子类决定 
+	 * 鍜栧暋鍏蜂綋浠?涔堟牱鐢卞瓙绫诲喅瀹? 
 	 */
 	public abstract void makeCoffee();
 }

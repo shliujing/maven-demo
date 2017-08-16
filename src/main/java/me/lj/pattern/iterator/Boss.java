@@ -1,4 +1,5 @@
 package me.lj.pattern.iterator;
+
 public class Boss extends Leader{
 
 	@Override

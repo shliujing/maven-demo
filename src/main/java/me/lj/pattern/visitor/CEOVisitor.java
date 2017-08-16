@@ -4,13 +4,13 @@ public class CEOVisitor implements Visitor {
 
 	@Override
 	public void visit(Engineer engineer) {
-		System.out.println("攻城狮：" + engineer.name + ", KPI:" + engineer.kpi);
+		System.out.println("鏀诲煄鐙細" + engineer.name + ", KPI:" + engineer.kpi);
 	}
 
 	@Override
 	public void visit(Manager manager) {
-		System.out.println("经理：" + manager.name + ", KPI:" + manager.kpi
-				+ ", 新产品数量 ：" + manager.getProducts());
+		System.out.println("缁忕悊锛?" + manager.name + ", KPI:" + manager.kpi
+				+ ", 鏂颁骇鍝佹暟閲? 锛?" + manager.getProducts());
 	}
 
 }

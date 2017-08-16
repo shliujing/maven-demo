@@ -3,10 +3,10 @@ package me.lj.pattern.mediator;
 public abstract class Mediator {
 
 	/**
-	 * ͬ�¶���ı�ʱ֪ͨ�н��ߵķ���
-	 * ��ͬ�¶���ı�ʱ���н���ȥ֪ͨ������ͬ�¶���
+	 * 同事对象改变时通知中介者的方法
+	 * 在同事对象改变时由中介者去通知其他的同事对象
 	 * 
-	 * @param c ͬ�¶���
+	 * @param c 同事对象
 	 */
 	public abstract void changed(Colleague c);
 }

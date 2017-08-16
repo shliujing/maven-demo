@@ -1,6 +1,6 @@
 package me.lj.pattern.adapter;
 
-//¶ÔÏóÊÊÅäÆ÷Ä£Ê½
+//å¯¹è±¡é€‚é…å™¨æ¨¡å¼
 public class VoltAdapter1 implements FiveVolt{
 	
 	Volt220 mVolt220;

@@ -1,6 +1,6 @@
 package me.lj.pattern.adapter;
 
-//Target½ÇÉ«
+//Targetè§’è‰²
 public interface FiveVolt {
 
 	public int getVolt5();

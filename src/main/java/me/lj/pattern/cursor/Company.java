@@ -1,11 +1,11 @@
-package com.zl.pattern.cursor;
+package me.lj.pattern.cursor;
 
 public interface Company {
 
 	/**
-	 * ·µ»ØÒ»¸öµü´úÆ÷¶ÔÏó
+	 * è¿”å›ä¸€ä¸ªè¿­ä»£å™¨å¯¹è±¡
 	 * 
-	 * @return µü´úÆ÷¶ÔÏó
+	 * @return è¿­ä»£å™¨å¯¹è±¡
 	 */
 	Iterator iterator();
 	

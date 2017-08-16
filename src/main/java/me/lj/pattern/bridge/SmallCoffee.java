@@ -8,6 +8,6 @@ public class SmallCoffee extends Coffee{
 
 	@Override
 	public void makeCoffee() {
-		System.out.println("Ğ¡±­µÄ" + impl.addSomething() + "¿§·È");
+		System.out.println("å°æ¯çš?" + impl.addSomething() + "å’–å•¡");
 	}
 }

@@ -1,11 +1,11 @@
-package com.zl.pattern.cursor;
+package me.lj.pattern.cursor;
 
 public class Employee {
 
-	private String name;// 姓名
-	private int age;// 年龄
-	private String sex;// 性别
-	private String position;// 职位
+	private String name;// 濮撳悕
+	private int age;// 骞撮緞
+	private String sex;// 鎬у埆
+	private String position;// 鑱屼綅
 
 	public Employee(String name, int age, String sex, String position) {
 		super();
@@ -15,7 +15,7 @@ public class Employee {
 		this.position = position;
 	}
 
-	// 简化代码，省略setter和getter方法
+	// 绠�鍖栦唬鐮侊紝鐪佺暐setter鍜実etter鏂规硶
 
 	@Override
 	public String toString() {

@@ -3,6 +3,6 @@ package me.lj.pattern.abfactory;
 public class SUVTire implements ITire{
 	@Override
 	public void tire() {
-		System.out.println("ԽҰ��̥");
+		System.out.println("越野轮胎");
 	}
 }

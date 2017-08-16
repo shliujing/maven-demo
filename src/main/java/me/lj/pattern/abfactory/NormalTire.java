@@ -3,6 +3,6 @@ package me.lj.pattern.abfactory;
 public class NormalTire implements ITire{
 	@Override
 	public void tire() {
-		System.out.println("ÆÕÍ¨ÂÖÌ¥");
+		System.out.println("æ™®é€šè½®èƒ");
 	}
 }

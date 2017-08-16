@@ -3,9 +3,9 @@ package me.lj.pattern.bridge;
 public abstract class CoffeeAdditives {
 	
 	/**
-	 * 具体要往咖啡里添加什么东西 
+	 * 鍏蜂綋瑕佸線鍜栧暋閲屾坊鍔犱粈涔堜笢瑗? 
 	 * 
-	 * @param 具体添加的东西
+	 * @param 鍏蜂綋娣诲姞鐨勪笢瑗?
 	 */
 	public abstract String addSomething();
 }

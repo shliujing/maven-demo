@@ -1,7 +1,7 @@
 package me.lj.pattern.cloneable;
 
 public class Client {
-    public static void main(String[] args) {
+	public static void main(String[] args) {
         try {
             Book book1 = new Book(50,"书1","内容");
             book1.addImage("图1");

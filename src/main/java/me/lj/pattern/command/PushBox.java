@@ -2,37 +2,37 @@ package me.lj.pattern.command;
 
 public class PushBox {
 	/**
-	 * 执行向左命令 
+	 * 鎵ц鍚戝乏鍛戒护 
 	 */
 	public void toLeft(){
-		System.out.println("向左");
+		System.out.println("鍚戝乏");
 	}
 	
 	/**
-	 * 执行向右命令 
+	 * 鎵ц鍚戝彸鍛戒护 
 	 */
 	public void toRight(){
-		System.out.println("向右");
+		System.out.println("鍚戝彸");
 	}
 	
 	/**
-	 * 执行向下命令 
+	 * 鎵ц鍚戜笅鍛戒护 
 	 */
 	public void toDown(){
-		System.out.println("向下");
+		System.out.println("鍚戜笅");
 	}
 	
 	/**
-	 * 执行向上命令 
+	 * 鎵ц鍚戜笂鍛戒护 
 	 */
 	public void toUp(){
-		System.out.println("向上");
+		System.out.println("鍚戜笂");
 	}
 	
 	/**
-	 * 执行撤销命令 
+	 * 鎵ц鎾ら攢鍛戒护 
 	 */
 	public void revoke(){
-		System.out.println("撤销");
+		System.out.println("鎾ら攢");
 	}
 }

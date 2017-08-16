@@ -4,7 +4,7 @@ public class Sugar extends CoffeeAdditives{
 
 	@Override
 	public String addSomething() {
-		return "¼ÓÌÇ";
+		return "åŠ ç³–";
 	}
 
 }

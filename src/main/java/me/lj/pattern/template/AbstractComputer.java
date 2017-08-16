@@ -1,53 +1,53 @@
 package me.lj.pattern.template;
 
 /**
- * 抽象的 Computer
+ * 鎶借薄鐨? Computer
  */
 public abstract class AbstractComputer {
-	//下面是基本方法，子类可以覆盖,不允许外部直接调用这些方法，所以用protected
+	//涓嬮潰鏄熀鏈柟娉曪紝瀛愮被鍙互瑕嗙洊,涓嶅厑璁稿閮ㄧ洿鎺ヨ皟鐢ㄨ繖浜涙柟娉曪紝鎵?浠ョ敤protected
 	/**
-     * 开启电源
+     * 寮?鍚數婧?
      */
 	protected abstract void powerOn();
 	
 	/**
-     * 检查硬件
+     * 妫?鏌ョ‖浠?
      */
 	protected abstract void checkHardware();
 	
 	/**
-     * 载入操作系统
+     * 杞藉叆鎿嶄綔绯荤粺
      */
 	protected abstract void loadOS();
 	
 	/**
-     * 登录
+     * 鐧诲綍
      */
 	protected abstract void login();
 	
-	//下面是钩子方法，声明并实现
+	//涓嬮潰鏄挬瀛愭柟娉曪紝澹版槑骞跺疄鐜?
 	/**
-     * 是否需要登录
+     * 鏄惁闇?瑕佺櫥褰?
      * 
-     * @return true为需要登录
+     * @return true涓洪渶瑕佺櫥褰?
      */
 	protected boolean isLogin(){
         return true;
     }
 	
-	//下面是模板方法，定义为final，子类不能覆盖此方法 
+	//涓嬮潰鏄ā鏉挎柟娉曪紝瀹氫箟涓篺inal锛屽瓙绫讳笉鑳借鐩栨鏂规硶 
 	/**
-     * 启动计算机方法，步骤为开启电源、系统检查、加载系统、检查是否登录。
+     * 鍚姩璁＄畻鏈烘柟娉曪紝姝ラ涓哄紑鍚數婧愩?佺郴缁熸鏌ャ?佸姞杞界郴缁熴?佹鏌ユ槸鍚︾櫥褰曘??
      */
 	public final void startUp(){
-		System.out.println("--------开机 START--------");
+		System.out.println("--------寮?鏈? START--------");
 		powerOn();
 		checkHardware();
 		loadOS();
 		if(isLogin()){
 			login();
 		}
-		System.out.println("-------- 开机 END --------");
+		System.out.println("-------- 寮?鏈? END --------");
 	}
 	
 }

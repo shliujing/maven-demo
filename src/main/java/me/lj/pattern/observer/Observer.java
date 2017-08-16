@@ -1,13 +1,13 @@
 package me.lj.pattern.observer;
 
 /**
- *  抽象观察者类，为所有具体观察者定义一个接口，在得到通知时更新自己
+ *  鎶借薄瑙傚療鑰呯被锛屼负鎵?鏈夊叿浣撹瀵熻?呭畾涔変竴涓帴鍙ｏ紝鍦ㄥ緱鍒伴?氱煡鏃舵洿鏂拌嚜宸?
  */
 public interface Observer {
 	/**
-	 *  有更新
+	 *  鏈夋洿鏂?
 	 *  
-	 *  @param message 消息
+	 *  @param message 娑堟伅
 	 */
 	public void update(String message);
 	

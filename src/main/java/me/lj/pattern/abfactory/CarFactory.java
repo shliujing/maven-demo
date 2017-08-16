@@ -2,23 +2,23 @@ package me.lj.pattern.abfactory;
 
 public abstract class CarFactory {
 	/**
-	 * Éú²úÂÖÌ¥
+	 * ç”Ÿäº§è½®èƒ
 	 * 
-	 * @return ÂÖÌ¥
+	 * @return è½®èƒ
 	 * */
 	public abstract ITire createTire();
 	
 	/**
-	 * Éú²ú·¢¶¯»ú
+	 * ç”Ÿäº§å‘åŠ¨æœº
 	 * 
-	 * @return ·¢¶¯»ú
+	 * @return å‘åŠ¨æœº
 	 * */
 	public abstract IEngine createEngine();
 	
 	/**
-	 * Éú²úÖÆ¶¯ÏµÍ³
+	 * ç”Ÿäº§åˆ¶åŠ¨ç³»ç»Ÿ
 	 * 
-	 * @return ÖÆ¶¯ÏµÍ³
+	 * @return åˆ¶åŠ¨ç³»ç»Ÿ
 	 * */
 	public abstract IBrake createBrake();
 	

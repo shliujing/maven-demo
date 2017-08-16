@@ -2,16 +2,16 @@ package me.lj.pattern.builder;
 
 public interface Builder {
 
-	//创建部件A　　比如创建汽车车轮
+	//鍒涘缓閮ㄤ欢A銆?銆?姣斿鍒涘缓姹借溅杞﹁疆
 	void buildPartA(); 
 
-	//创建部件B   比如创建汽车方向盘
+	//鍒涘缓閮ㄤ欢B   姣斿鍒涘缓姹借溅鏂瑰悜鐩?
 	void buildPartB(); 
 
-	//创建部件C   比如创建汽车发动机
+	//鍒涘缓閮ㄤ欢C   姣斿鍒涘缓姹借溅鍙戝姩鏈?
 	void buildPartC();
 
-	//返回最后组装成品结果 (返回最后装配好的汽车)
+	//杩斿洖鏈?鍚庣粍瑁呮垚鍝佺粨鏋? (杩斿洖鏈?鍚庤閰嶅ソ鐨勬苯杞?)
 	Product getResult();
 
 }

@@ -4,16 +4,16 @@ import java.util.ArrayList;
 
 public class Buttons {
 
-	private LeftCommand leftCommand; //Ïò×óÒÆ¶¯µÄÃüÁî¶ÔÏóÒıÓÃ
-	private RightCommand rightCommand; //ÏòÓÒÒÆ¶¯µÄÃüÁî¶ÔÏóÒıÓÃ
-	private UpCommand upCommand; //ÏòÉÏÒÆ¶¯µÄÃüÁî¶ÔÏóÒıÓÃ
-	private DownCommand downCommand; //ÏòÏÂÒÆ¶¯µÄÃüÁî¶ÔÏóÒıÓÃ
-	private RevokeCommand revokeCommand; //³·ÏúÃüÁî¶ÔÏóÒıÓÃ
+	private LeftCommand leftCommand; //å‘å·¦ç§»åŠ¨çš„å‘½ä»¤å¯¹è±¡å¼•ç”¨
+	private RightCommand rightCommand; //å‘å³ç§»åŠ¨çš„å‘½ä»¤å¯¹è±¡å¼•ç”¨
+	private UpCommand upCommand; //å‘ä¸Šç§»åŠ¨çš„å‘½ä»¤å¯¹è±¡å¼•ç”¨
+	private DownCommand downCommand; //å‘ä¸‹ç§»åŠ¨çš„å‘½ä»¤å¯¹è±¡å¼•ç”¨
+	private RevokeCommand revokeCommand; //æ’¤é”€å‘½ä»¤å¯¹è±¡å¼•ç”¨
 	
-	private ArrayList<Command> commandList = new ArrayList<Command>();//ÓÃÓÚ¼ÇÂ¼ÃüÁî¶¯×÷
+	private ArrayList<Command> commandList = new ArrayList<Command>();//ç”¨äºè®°å½•å‘½ä»¤åŠ¨ä½œ
 	
 	/**
-	 * »ñÈ¡Ö´ĞĞÃüÁî
+	 * è·å–æ‰§è¡Œå‘½ä»¤
 	 */
 	public void getCommandList(){
 		for(Command c : commandList){
@@ -23,52 +23,52 @@ public class Buttons {
 	}
 	
 	/**
-	 * ÉèÖÃÏò×óÒÆ¶¯µÄÃüÁî¶ÔÏó
+	 * è®¾ç½®å‘å·¦ç§»åŠ¨çš„å‘½ä»¤å¯¹è±¡
 	 * 
-	 * @param leftCommand Ïò×óÒÆ¶¯µÄÃüÁî¶ÔÏó
+	 * @param leftCommand å‘å·¦ç§»åŠ¨çš„å‘½ä»¤å¯¹è±¡
 	 */
 	public void setLeftCommand(LeftCommand leftCommand){
 		this.leftCommand = leftCommand;
 	}
 	
 	/**
-	 * ÉèÖÃÏòÓÒÒÆ¶¯µÄÃüÁî¶ÔÏó
+	 * è®¾ç½®å‘å³ç§»åŠ¨çš„å‘½ä»¤å¯¹è±¡
 	 * 
-	 * @param rightCommand ÏòÓÒÒÆ¶¯µÄÃüÁî¶ÔÏó
+	 * @param rightCommand å‘å³ç§»åŠ¨çš„å‘½ä»¤å¯¹è±¡
 	 */
 	public void setRightCommand(RightCommand rightCommand){
 		this.rightCommand = rightCommand;
 	}
 	
 	/**
-	 * ÉèÖÃÏòÉÏÒÆ¶¯µÄÃüÁî¶ÔÏó
+	 * è®¾ç½®å‘ä¸Šç§»åŠ¨çš„å‘½ä»¤å¯¹è±¡
 	 * 
-	 * @param upCommand ÏòÉÏÒÆ¶¯µÄÃüÁî¶ÔÏó
+	 * @param upCommand å‘ä¸Šç§»åŠ¨çš„å‘½ä»¤å¯¹è±¡
 	 */
 	public void setUpCommand(UpCommand upCommand){
 		this.upCommand = upCommand;
 	}
 	
 	/**
-	 * ÉèÖÃÏòÏÂÒÆ¶¯µÄÃüÁî¶ÔÏó
+	 * è®¾ç½®å‘ä¸‹ç§»åŠ¨çš„å‘½ä»¤å¯¹è±¡
 	 * 
-	 * @param downCommand ÏòÏÂÒÆ¶¯µÄÃüÁî¶ÔÏó
+	 * @param downCommand å‘ä¸‹ç§»åŠ¨çš„å‘½ä»¤å¯¹è±¡
 	 */
 	public void setDownCommand(DownCommand downCommand){
 		this.downCommand = downCommand;
 	}
 	
 	/**
-	 * ÉèÖÃ³·ÏúÃüÁî¶ÔÏó
+	 * è®¾ç½®æ’¤é”€å‘½ä»¤å¯¹è±¡
 	 * 
-	 * @param revokeCommand ³·ÏúÃüÁî¶ÔÏó
+	 * @param revokeCommand æ’¤é”€å‘½ä»¤å¯¹è±¡
 	 */
 	public void setRevokeCommand(RevokeCommand revokeCommand){
 		this.revokeCommand = revokeCommand;
 	}
 	
 	/**
-	 * °´ÏÂÏò×ó°´Å¥ 
+	 * æŒ‰ä¸‹å‘å·¦æŒ‰é’® 
 	 */
 	public void toLeft(){
 		leftCommand.execute();
@@ -76,7 +76,7 @@ public class Buttons {
 	}
 	
 	/**
-	 * °´ÏÂÏòÓÒ°´Å¥ 
+	 * æŒ‰ä¸‹å‘å³æŒ‰é’® 
 	 */
 	public void toRight(){
 		rightCommand.execute();
@@ -84,7 +84,7 @@ public class Buttons {
 	}
 	
 	/**
-	 * °´ÏÂÏòÉÏ°´Å¥ 
+	 * æŒ‰ä¸‹å‘ä¸ŠæŒ‰é’® 
 	 */
 	public void toUp(){
 		upCommand.execute();
@@ -92,7 +92,7 @@ public class Buttons {
 	}
 	
 	/**
-	 * °´ÏÂÏòÏÂ°´Å¥ 
+	 * æŒ‰ä¸‹å‘ä¸‹æŒ‰é’® 
 	 */
 	public void toDown(){
 		downCommand.execute();
@@ -100,7 +100,7 @@ public class Buttons {
 	}
 	
 	/**
-	 * °´ÏÂ³·Ïú°´Å¥ 
+	 * æŒ‰ä¸‹æ’¤é”€æŒ‰é’® 
 	 */
 	public void toRevoke(){
 		revokeCommand.execute();

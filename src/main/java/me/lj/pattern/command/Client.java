@@ -3,17 +3,17 @@ package me.lj.pattern.command;
 public class Client {
 
 	public static void main(String[] args) {
-		//Ê×ÏÈ´´½¨ÓÎÏ·
+		//é¦–å…ˆåˆ›å»ºæ¸¸æˆ
 		PushBox pushBox = new PushBox();
 		
-		//¸ù¾İÓÎÏ·¹¹Ôì5ÖÖÃüÁî
+		//æ ¹æ®æ¸¸æˆæ„é€ 5ç§å‘½ä»¤
 		LeftCommand leftCommand = new LeftCommand(pushBox);
 		RightCommand rightCommand = new RightCommand(pushBox);
 		UpCommand upCommand = new UpCommand(pushBox);
 		DownCommand downCommand = new DownCommand(pushBox);
 		RevokeCommand revokeCommand = new RevokeCommand(pushBox);
 		
-		//°´Å¥¿ÉÒÔÖ´ĞĞ²»Í¬ÃüÁî
+		//æŒ‰é’®å¯ä»¥æ‰§è¡Œä¸åŒå‘½ä»¤
 		Buttons buttons = new Buttons();
 		buttons.setLeftCommand(leftCommand);
 		buttons.setRightCommand(rightCommand);
@@ -21,7 +21,7 @@ public class Client {
 		buttons.setDownCommand(downCommand);
 		buttons.setRevokeCommand(revokeCommand);
 		
-		//Ö´ĞĞ²Ù×÷
+		//æ‰§è¡Œæ“ä½œ
 		buttons.toLeft();
 		buttons.toDown();
 		buttons.toDown();

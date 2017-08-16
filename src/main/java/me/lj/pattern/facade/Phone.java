@@ -1,10 +1,10 @@
-package com.zl.pattern.facade;
+package me.lj.pattern.facade;
 
 public interface Phone {
 
-	//²¦µç»°
+	//æ‹¨ç”µè¯
 	public void dail();
 	
-	//¹Ò¶Ï
+	//æŒ‚æ–­
 	public void hangup();
 }

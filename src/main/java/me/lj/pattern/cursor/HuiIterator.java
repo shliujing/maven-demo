@@ -1,4 +1,4 @@
-package com.zl.pattern.cursor;
+package me.lj.pattern.cursor;
 
 
 public class HuiIterator implements Iterator{

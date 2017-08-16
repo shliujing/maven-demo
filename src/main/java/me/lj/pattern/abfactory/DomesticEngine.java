@@ -3,6 +3,6 @@ package me.lj.pattern.abfactory;
 public class DomesticEngine implements IEngine{
 	@Override
 	public void engine() {
-		System.out.println("¹ú²ú·¢¶¯»ú");
+		System.out.println("å›½äº§å‘åŠ¨æœº");
 	}
 }

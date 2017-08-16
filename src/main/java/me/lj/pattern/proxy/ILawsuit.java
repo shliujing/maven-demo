@@ -3,22 +3,22 @@ package me.lj.pattern.proxy;
 public interface ILawsuit {
 
 	/**
-	 * 提交申请 
+	 * 鎻愪氦鐢宠 
 	 */
 	void submit();
 	
 	/**
-	 * 进行举证 
+	 * 杩涜涓捐瘉 
 	 */
 	void burden();
 	
 	/**
-	 * 开始辩护
+	 * 寮?濮嬭京鎶?
 	 */
 	void defend();
 	
 	/**
-	 * 诉讼完成
+	 * 璇夎瀹屾垚
 	 */
 	void finish();
 }

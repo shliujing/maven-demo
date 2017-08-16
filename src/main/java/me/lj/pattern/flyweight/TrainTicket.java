@@ -9,7 +9,7 @@ public class TrainTicket implements Ticket{
 	public String to; // 目的地
 	public String bunk; //铺位
 	public int price; //价格
-
+	
 	public TrainTicket(String from, String to) {
 		this.from = from;
 		this.to = to;

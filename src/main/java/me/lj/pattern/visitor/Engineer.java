@@ -3,11 +3,11 @@ package me.lj.pattern.visitor;
 import java.util.Random;
 
 /**
- * 攻城狮 
+ * 鏀诲煄鐙? 
  */
 public class Engineer extends Staff{
 
-	private int codeLines;//代码数量
+	private int codeLines;//浠ｇ爜鏁伴噺
 	
 	public Engineer(String name) {
 		super(name);
@@ -19,7 +19,7 @@ public class Engineer extends Staff{
 		visitor.visit(this);
 	}
 
-	//攻城狮这一年写的代码数量
+	//鏀诲煄鐙繖涓?骞村啓鐨勪唬鐮佹暟閲?
 	public int getCodeLines(){
 		return codeLines;
 	}

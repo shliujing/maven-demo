@@ -1,8 +1,8 @@
-package com.zl.pattern.decorator;
+package me.lj.pattern.decorator;
 
 public abstract class Person {
 	/**
-	 * PersonÏÂÓĞÒ»¸ö´©×ÅµÄ³éÏó·½·¨ 
+	 * Personä¸‹æœ‰ä¸€ä¸ªç©¿ç€çš„æŠ½è±¡æ–¹æ³• 
 	 */
 	public abstract void dressed();
 }

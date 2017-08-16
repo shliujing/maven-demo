@@ -3,13 +3,13 @@ package me.lj.pattern.strategy;
 public class Client {
 
     public static void main(String[] args) {
-        //选择并创建需要使用的策略对象
+        //閫夋嫨骞跺垱寤洪渶瑕佷娇鐢ㄧ殑绛栫暐瀵硅薄
         MemberStrategy strategy1 = new AdvancedMemberStrategy();
-        //创建环境
+        //鍒涘缓鐜
         Price price = new Price(strategy1);
-        //计算价格
+        //璁＄畻浠锋牸
         double quote = price.quote(300);
-        System.out.println("图书的最终价格为：" + quote);
+        System.out.println("鍥句功鐨勬渶缁堜环鏍间负锛?" + quote);
     }
 
 }

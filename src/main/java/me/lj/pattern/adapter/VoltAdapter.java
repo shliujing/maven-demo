@@ -1,5 +1,5 @@
 package me.lj.pattern.adapter;
-//ÀàÊÊÅäÆ÷Ä£Ê½
+//ç±»é€‚é…å™¨æ¨¡å¼
 public class VoltAdapter extends Volt220 implements FiveVolt{
 
 	@Override

@@ -9,12 +9,12 @@ public class GroupLeader extends Leader{
 
 	@Override
 	public void handle(int money) {
-		System.out.println("组长批复报销"+ money +"元");
+		System.out.println("缁勯暱鎵瑰鎶ラ攢"+ money +"鍏?");
 	}
 
 	@Override
 	public String getLeader() {
-		return "当前是组长";
+		return "褰撳墠鏄粍闀?";
 	}
 
 } 

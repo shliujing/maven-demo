@@ -1,17 +1,17 @@
 package me.lj.pattern.observer;
 
 /**
- * 具体的观察者类，也就是订阅者
+ * 鍏蜂綋鐨勮瀵熻?呯被锛屼篃灏辨槸璁㈤槄鑰?
  */
 public class User implements Observer {
 
 	@Override
 	public void update(String message) {
-		System.out.println(name + "," + message + "更新了！");
+		System.out.println(name + "," + message + "鏇存柊浜嗭紒");
 
 	}
 
-	// 订阅者的名字
+	// 璁㈤槄鑰呯殑鍚嶅瓧
 	private String name;
 
 	public User(String name) {

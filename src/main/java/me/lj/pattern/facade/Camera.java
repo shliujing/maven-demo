@@ -1,13 +1,13 @@
-package com.zl.pattern.facade;
+package me.lj.pattern.facade;
 
 public interface Camera {
 
-	//打开相机
+	//鎵撳紑鐩告満
 	public void open();
 		
-	//拍照
+	//鎷嶇収
 	public void takePicture();
 	
-	//关闭相机
+	//鍏抽棴鐩告満
 	public void close();
 }

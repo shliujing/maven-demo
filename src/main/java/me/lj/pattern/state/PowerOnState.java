@@ -2,28 +2,28 @@ package me.lj.pattern.state;
 
 /**
  * 
- * 开机状态，操作有效
+ * 寮?鏈虹姸鎬侊紝鎿嶄綔鏈夋晥
  * 
  * */
 public class PowerOnState implements TVState{
 
 	@Override
 	public void nextChannel() {
-		System.out.println("下一频道");
+		System.out.println("涓嬩竴棰戦亾");
 	}
 
 	@Override
 	public void prevChannel() {
-		System.out.println("上一频道");
+		System.out.println("涓婁竴棰戦亾");
 	}
 
 	@Override
 	public void turnUp() {
-		System.out.println("调高音量");
+		System.out.println("璋冮珮闊抽噺");
 	}
 
 	@Override
 	public void turnDown() {
-		System.out.println("调低音量");
+		System.out.println("璋冧綆闊抽噺");
 	}
 }

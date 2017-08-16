@@ -2,11 +2,11 @@ package me.lj.pattern.strategy;
 
 public class AdvancedMemberStrategy implements MemberStrategy{
 	/**
-     * 高级会员折扣
+     * 楂樼骇浼氬憳鎶樻墸
      */
 	@Override
 	public double calcPrice(double booksPrice) {
-		System.out.println("对于高级会员的折扣为20%");
+		System.out.println("瀵逛簬楂樼骇浼氬憳鐨勬姌鎵ｄ负20%");
         return booksPrice * 0.8;
 	}
 }

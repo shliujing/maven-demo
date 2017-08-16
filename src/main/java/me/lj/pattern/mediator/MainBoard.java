@@ -2,34 +2,34 @@ package me.lj.pattern.mediator;
 
 public class MainBoard extends Mediator{
 	
-	private CDDevice cdDevice; //�����豸
+	private CDDevice cdDevice; //光驱设备
 	private CPU cpu; //CPU
-	private SoundCard soundCard; //�����豸
-	private GraphicsCard graphicsCard; //�Կ��豸
+	private SoundCard soundCard; //声卡设备
+	private GraphicsCard graphicsCard; //显卡设备
 
 	@Override
 	public void changed(Colleague c) {
-		//���������ȡ������
+		//如果光驱读取了数据
 		if(c == cdDevice){
 			handleCD((CDDevice) c);
 		}
-		//���CPU����������
+		//如果CPU处理完数据
 		else if(c == cpu){
 			handleCD((CPU) c);
 		}
 	}
 
 	/**
-	 * ���������ȡ���ݺ��������豸�Ľ���
+	 * 处理光驱读取数据后与其他设备的交互
 	 * 
-	 * @param cdDevice �����豸
+	 * @param cdDevice 光驱设备
 	 */
 	public void handleCD(CDDevice cdDevice){
 		cpu.decodeData(cdDevice.read());
 	}
 	
 	/**
-	 * ����CPU��ȡ���ݺ��������豸�Ľ���
+	 * 处理CPU读取数据后与其他设备的交互
 	 * 
 	 * @param cpu CPU
 	 */
@@ -39,16 +39,16 @@ public class MainBoard extends Mediator{
 	}
 	
 	/**
-	 * ����CD�豸
+	 * 设置CD设备
 	 * 
-	 * @param CDDevice CD�豸
+	 * @param CDDevice CD设备
 	 */
 	public void setCDDevice(CDDevice cdDevice){
 		this.cdDevice = cdDevice;
 	}
 	
 	/**
-	 * ����CPU
+	 * 设置CPU
 	 * 
 	 * @param cpu CPU
 	 */
@@ -57,18 +57,18 @@ public class MainBoard extends Mediator{
 	}
 	
 	/**
-	 * ���������豸
+	 * 设置声卡设备
 	 * 
-	 * @param soundCard �����豸
+	 * @param soundCard 声卡设备
 	 */
 	public void setSoundCard(SoundCard soundCard){
 		this.soundCard = soundCard;
 	}
 	
 	/**
-	 * �����Կ��豸
+	 * 设置显卡设备
 	 * 
-	 * @param graphicsCard �Կ��豸
+	 * @param graphicsCard 显卡设备
 	 */
 	public void setGraphicsCard(GraphicsCard graphicsCard){
 		this.graphicsCard = graphicsCard;

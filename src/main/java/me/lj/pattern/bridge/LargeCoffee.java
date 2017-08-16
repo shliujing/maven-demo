@@ -8,7 +8,7 @@ public class LargeCoffee extends Coffee{
 
 	@Override
 	public void makeCoffee() {
-		System.out.println("´ó±­µÄ" + impl.addSomething() + "¿§·È");
+		System.out.println("å¤§æ¯çš?" + impl.addSomething() + "å’–å•¡");
 	}
 
 }

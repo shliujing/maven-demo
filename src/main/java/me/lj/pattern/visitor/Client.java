@@ -4,13 +4,13 @@ package me.lj.pattern.visitor;
 
 public class Client {
 	public static void main(String[] args) {
-		//构建报表
+		//鏋勫缓鎶ヨ〃
 		BusinessReport report = new BusinessReport();
-		System.out.println("===== 给CEO看报表 =====");
-		//设置访问者CEO
+		System.out.println("===== 缁機EO鐪嬫姤琛? =====");
+		//璁剧疆璁块棶鑰匔EO
 		report.showReport(new CEOVisitor());
-		System.out.println("===== 给CTO看报表 =====");
-		//设置访问者CTO
+		System.out.println("===== 缁機TO鐪嬫姤琛? =====");
+		//璁剧疆璁块棶鑰匔TO
 		report.showReport(new CTOVisitor());
 	}
 }

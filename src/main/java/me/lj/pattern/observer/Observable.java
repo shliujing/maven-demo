@@ -1,21 +1,21 @@
 package me.lj.pattern.observer;
 
 /**
- * 抽象被观察者类
+ * 鎶借薄琚瀵熻?呯被
  */
 public interface Observable {
 
 	/**
-	 * 推送消息
+	 * 鎺ㄩ?佹秷鎭?
 	 * 
-	 * @param message 内容
+	 * @param message 鍐呭
 	 */
 	void push(String message);
 
 	/**
-	 * 订阅
+	 * 璁㈤槄
 	 * 
-	 * @param observer 订阅者
+	 * @param observer 璁㈤槄鑰?
 	 */
 	void register(Observer observer);
 }

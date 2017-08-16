@@ -1,4 +1,4 @@
-package com.zl.pattern.cursor;
+package me.lj.pattern.cursor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,11 +8,11 @@ public class CompanyMin implements Company{
 	private List<Employee> list = new ArrayList<>();
 	
 	public CompanyMin(){
-		list.add(new Employee("Ğ¡Ãñ", 26, "ÄĞ", "³ÌĞòÔ³"));
-		list.add(new Employee("Ğ¡Ü¿", 22, "Å®", "²âÊÔ"));
-		list.add(new Employee("Ğ¡·½", 18, "Å®", "²âÊÔ"));
-		list.add(new Employee("¿É¶ù", 21, "Å®", "Éè¼Æ"));
-		list.add(new Employee("ÀÊÇé", 19, "Å®", "Éè¼Æ"));
+		list.add(new Employee("å°æ°‘", 26, "ç”·", "ç¨‹åºçŒ¿"));
+		list.add(new Employee("å°èŠ¸", 22, "å¥³", "æµ‹è¯•"));
+		list.add(new Employee("å°æ–¹", 18, "å¥³", "æµ‹è¯•"));
+		list.add(new Employee("å¯å„¿", 21, "å¥³", "è®¾è®¡"));
+		list.add(new Employee("æœ—æƒ…", 19, "å¥³", "è®¾è®¡"));
 	}
 
 	public List<Employee> getEmployees(){

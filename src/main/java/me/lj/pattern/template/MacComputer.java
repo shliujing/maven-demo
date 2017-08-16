@@ -1,28 +1,28 @@
 package me.lj.pattern.template;
 
 /**
- * Mac系统电脑
+ * Mac绯荤粺鐢佃剳
  */
 public class MacComputer extends AbstractComputer{
 
 	@Override
 	protected void powerOn() {
-		System.out.println("Mac电脑开启电源");
+		System.out.println("Mac鐢佃剳寮?鍚數婧?");
 	}
 
 	@Override
 	protected void checkHardware() {
-		System.out.println("Mac电脑检查硬件");
+		System.out.println("Mac鐢佃剳妫?鏌ョ‖浠?");
 	}
 
 	@Override
 	protected void loadOS() {
-		System.out.println("Mac电脑载入操作系统");
+		System.out.println("Mac鐢佃剳杞藉叆鎿嶄綔绯荤粺");
 	}
 
 	@Override
 	protected void login() {
-		System.out.println("Mac电脑登录");
+		System.out.println("Mac鐢佃剳鐧诲綍");
 	}
 
 }

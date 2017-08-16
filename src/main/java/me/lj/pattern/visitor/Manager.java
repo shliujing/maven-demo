@@ -3,11 +3,11 @@ package me.lj.pattern.visitor;
 import java.util.Random;
 
 /**
- * 经理
+ * 缁忕悊
  */
 public class Manager extends Staff{
 
-	private int products;//产品数量
+	private int products;//浜у搧鏁伴噺
 	
 	public Manager(String name) {
 		super(name);
@@ -19,7 +19,7 @@ public class Manager extends Staff{
 		visitor.visit(this);
 	}
 
-	//一年内做的产品数量
+	//涓?骞村唴鍋氱殑浜у搧鏁伴噺
 	public int getProducts(){
 		return products;
 	}

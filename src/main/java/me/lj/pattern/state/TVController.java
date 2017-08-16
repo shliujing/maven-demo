@@ -1,7 +1,7 @@
 package me.lj.pattern.state;
 
 /**
- * 电视遥控器
+ * 鐢佃閬ユ帶鍣?
  * 
  * */
 public class TVController implements PowerController{
@@ -15,13 +15,13 @@ public class TVController implements PowerController{
 	@Override
 	public void powerOn() {
 		setTVState(new PowerOnState());
-		System.out.println("开机了");
+		System.out.println("寮?鏈轰簡");
 	}
 
 	@Override
 	public void powerOff() {
 		setTVState(new PowerOffState());
-		System.out.println("关机了");
+		System.out.println("鍏虫満浜?");
 	}
 	
 	public void nextChannel(){

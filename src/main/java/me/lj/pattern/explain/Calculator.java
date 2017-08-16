@@ -1,33 +1,33 @@
-package com.zl.pattern.explain;
+package me.lj.pattern.explain;
 
 import java.util.Stack;
 
 public class Calculator {
 
-	//ÉùÃ÷Ò»¸öStackÕ»´¢´æ²¢²Ù×÷ËùÓĞÏà¹ØµÄ½âÊÍÆ÷
+	//å£°æ˜ä¸€ä¸ªStackæ ˆå‚¨å­˜å¹¶æ“ä½œæ‰€æœ‰ç›¸å…³çš„è§£é‡Šå™¨
 	private Stack<ArithemticExpression> mExpStack = new Stack<ArithemticExpression>();
 	
 	public Calculator(String expression){
-		//ÉùÃ÷Á½¸öArithemticExpressionÀàĞÍµÄÁÙÊ±±äÁ¿£¬´¢´æÔËËã·û×óÓÒÁ½±ßµÄÊı×Ö½âÊÍÆ÷
+		//å£°æ˜ä¸¤ä¸ªArithemticExpressionç±»å‹çš„ä¸´æ—¶å˜é‡ï¼Œå‚¨å­˜è¿ç®—ç¬¦å·¦å³ä¸¤è¾¹çš„æ•°å­—è§£é‡Šå™¨
 		ArithemticExpression exp1,exp2;
 		
-		//¸ù¾İ¿Õ¸ñ·Ö¸î±í´ïÊ½×Ö·û´®(±ÈÈç1 + 2 + 3 + 4)
+		//æ ¹æ®ç©ºæ ¼åˆ†å‰²è¡¨è¾¾å¼å­—ç¬¦ä¸²(æ¯”å¦‚1 + 2 + 3 + 4)
 		String[] elements = expression.split(" ");
 		
 		/*
-		 * ±éÀú±í´ïÊ½ÔªËØÊı×é
+		 * éå†è¡¨è¾¾å¼å…ƒç´ æ•°ç»„
 		 */
 		for(int i = 0; i < elements.length; i++){
 			/*
-			 * ÅĞ¶ÏÔËËã·ûºÅ
+			 * åˆ¤æ–­è¿ç®—ç¬¦å·
 			 */
 			switch (elements[i].charAt(0)) {
 			case '+':
-				//Èç¹ûÊÇ¼ÓºÅ£¬Ôò½«Õ»ÖĞµÄ½âÊÍÆ÷µ¯³ö×÷ÎªÔËËã·ûºÅ×ó±ßµÄ½âÊÍÆ÷
+				//å¦‚æœæ˜¯åŠ å·ï¼Œåˆ™å°†æ ˆä¸­çš„è§£é‡Šå™¨å¼¹å‡ºä½œä¸ºè¿ç®—ç¬¦å·å·¦è¾¹çš„è§£é‡Šå™¨
 				exp1 = mExpStack.pop();
-				//Í¬Ê±½«ÔËËã·ûºÅÊı×éÏÂ±êµÄÏÂÒ»¸öÔªËØ¹¹ÔìÎªÒ»¸öÊı×Ö½âÊÍÆ÷
+				//åŒæ—¶å°†è¿ç®—ç¬¦å·æ•°ç»„ä¸‹æ ‡çš„ä¸‹ä¸€ä¸ªå…ƒç´ æ„é€ ä¸ºä¸€ä¸ªæ•°å­—è§£é‡Šå™¨
 				exp2 = new NumExpression(Integer.parseInt(elements[++i]));
-				//Í¨¹ıÉÏÃæµÄÁ½¸öÊı×Ö½âÊÍÆ÷¹¹Ôì¼Ó·¨ÔËËã½âÊÍÆ÷	
+				//é€šè¿‡ä¸Šé¢çš„ä¸¤ä¸ªæ•°å­—è§£é‡Šå™¨æ„é€ åŠ æ³•è¿ç®—è§£é‡Šå™¨	
 				mExpStack.push(new AdditionExpression(exp1, exp2));
 				break;
 			case '-':
@@ -37,7 +37,7 @@ public class Calculator {
 				break;
 			default:
 				/*
-				 * Èç¹ûÎªÊı×Ö£¬Ö±½Ó¹¹ÔìÊı×Ö½âÊÍÆ÷²¢Ñ¹ÈëÕ»
+				 * å¦‚æœä¸ºæ•°å­—ï¼Œç›´æ¥æ„é€ æ•°å­—è§£é‡Šå™¨å¹¶å‹å…¥æ ˆ
 				 */
 				mExpStack.push(new NumExpression(Integer.valueOf(elements[i])));
 				break;
@@ -46,9 +46,9 @@ public class Calculator {
 	}
 	
 	/**
-	 * ¼ÆËã½á¹û
+	 * è®¡ç®—ç»“æœ
 	 * 
-	 * @return ×îÖÕµÄ¼ÆËã½á¹û
+	 * @return æœ€ç»ˆçš„è®¡ç®—ç»“æœ
 	 */
 	public int calculate(){
 		return mExpStack.pop().interpreter();

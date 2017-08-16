@@ -2,11 +2,11 @@ package me.lj.pattern.strategy;
 
 public class PrimaryMemberStrategy implements MemberStrategy{
 	/**
-     * 初级会员折扣
+     * 鍒濈骇浼氬憳鎶樻墸
      */
 	@Override
 	public double calcPrice(double booksPrice) {
-		System.out.println("对于初级会员的没有折扣");
+		System.out.println("瀵逛簬鍒濈骇浼氬憳鐨勬病鏈夋姌鎵?");
         return booksPrice;
 	}
 }

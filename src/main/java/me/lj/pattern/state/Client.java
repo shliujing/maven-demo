@@ -3,15 +3,15 @@ package me.lj.pattern.state;
 public class Client {
 	public static void main(String[] args) {
 		TVController tvController = new TVController();
-		//设置开机状态
+		//璁剧疆寮?鏈虹姸鎬?
 		tvController.powerOn();
-		//下一频道
+		//涓嬩竴棰戦亾
 		tvController.nextChannel();
-		//调高音量
+		//璋冮珮闊抽噺
 		tvController.turnUp();
-		//关机
+		//鍏虫満
 		tvController.powerOff();
-		//调低音量，此时不会生效
+		//璋冧綆闊抽噺锛屾鏃朵笉浼氱敓鏁?
 		tvController.turnDown();
 	}
 }

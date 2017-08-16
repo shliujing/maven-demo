@@ -3,12 +3,12 @@ package me.lj.pattern.visitor;
 import java.util.Random;
 
 /**
- * 员工基类（Element） 
+ * 鍛樺伐鍩虹被锛圗lement锛? 
  */
 public abstract class Staff {
-	//员工姓名
+	//鍛樺伐濮撳悕
 	public String name;
-	//员工KPI
+	//鍛樺伐KPI
 	public int kpi;
 	
 	public Staff(String name) {
@@ -16,7 +16,7 @@ public abstract class Staff {
 		this.name = name;
 		this.kpi = new Random().nextInt(10);
 	}
-	//接受Visitor的访问
+	//鎺ュ彈Visitor鐨勮闂?
 	public abstract void accept(Visitor visitor);
 	
 }

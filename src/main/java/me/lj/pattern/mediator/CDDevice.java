@@ -2,29 +2,29 @@ package me.lj.pattern.mediator;
 
 public class CDDevice extends Colleague{
 
-	private String data; //��Ƶ����
+	private String data; //视频数据
 	
 	public CDDevice(Mediator mediator) {
 		super(mediator);
 	}
 
 	/**
-	 * ��ȡ��Ƶ����
+	 * 读取视频数据
 	 * 
-	 * @return ��Ƶ����
+	 * @return 视频数据
 	 */
 	public String read(){
 		return data;
 	}
 	
 	/**
-	 * ������Ƶ����
+	 * 加载视频数据
 	 * 
-	 * @return ��Ƶ����
+	 * @return 音频数据
 	 */
 	public void load(){
-		data = "��Ƶ����,��Ƶ����";
-		//�����н�������״̬�ı�
+		data = "视频数据,音频数据";
+		//告诉中介者自身状态改变
 		mediator.changed(this);
 	}
 }

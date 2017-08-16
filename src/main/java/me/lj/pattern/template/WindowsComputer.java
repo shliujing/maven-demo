@@ -1,23 +1,23 @@
 package me.lj.pattern.template;
 
 /**
- * Windows系统电脑
+ * Windows绯荤粺鐢佃剳
  */
 public class WindowsComputer extends AbstractComputer{
 
 	@Override
 	protected void powerOn() {
-		System.out.println("Windows电脑开启电源");
+		System.out.println("Windows鐢佃剳寮?鍚數婧?");
 	}
 
 	@Override
 	protected void checkHardware() {
-		System.out.println("Windows电脑检查硬件");
+		System.out.println("Windows鐢佃剳妫?鏌ョ‖浠?");
 	}
 
 	@Override
 	protected void loadOS() {
-		System.out.println("Windows电脑载入操作系统");
+		System.out.println("Windows鐢佃剳杞藉叆鎿嶄綔绯荤粺");
 	}
 
 	@Override
@@ -27,7 +27,7 @@ public class WindowsComputer extends AbstractComputer{
 
 	@Override
 	protected boolean isLogin() {
-		return false;//返回false，不需登录
+		return false;//杩斿洖false锛屼笉闇?鐧诲綍
 	}
 
 }

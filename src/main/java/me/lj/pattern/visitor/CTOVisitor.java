@@ -4,12 +4,12 @@ public class CTOVisitor implements Visitor {
 
 	@Override
 	public void visit(Engineer engineer) {
-		System.out.println("攻城狮：" + engineer.name + ", 代码数量:" + engineer.getCodeLines());
+		System.out.println("鏀诲煄鐙細" + engineer.name + ", 浠ｇ爜鏁伴噺:" + engineer.getCodeLines());
 	}
 
 	@Override
 	public void visit(Manager manager) {
-		System.out.println("经理：" + manager.name +", 产品数量 ：" + manager.getProducts());
+		System.out.println("缁忕悊锛?" + manager.name +", 浜у搧鏁伴噺 锛?" + manager.getProducts());
 	}
 
 }

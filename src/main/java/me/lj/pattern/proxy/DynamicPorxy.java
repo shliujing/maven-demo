@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 
 public class DynamicPorxy implements InvocationHandler{
 
-	private Object obj; //被代理类的引用
+	private Object obj; //琚唬鐞嗙被鐨勫紩鐢?
 	
 	public DynamicPorxy(Object obj) {
 		this.obj = obj;
@@ -14,7 +14,7 @@ public class DynamicPorxy implements InvocationHandler{
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args)
 			throws Throwable {
-		// 调用被代理类对象的方法
+		// 璋冪敤琚唬鐞嗙被瀵硅薄鐨勬柟娉?
 		Object result = method.invoke(obj, args);
 		return result;
 	}

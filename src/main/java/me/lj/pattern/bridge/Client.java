@@ -3,25 +3,25 @@ package me.lj.pattern.bridge;
 public class Client {
 
 	public static void main(String[] args) {
-		//原味
+		//鍘熷懗
 		Ordinary implOrdinary = new Ordinary();
 		
-		//加糖
+		//鍔犵硸
 		Sugar implSugar = new Sugar();
 		
-		//大杯咖啡  原味
+		//澶ф澂鍜栧暋  鍘熷懗
 		LargeCoffee largeCoffeeOrdinary = new LargeCoffee(implOrdinary);
 		largeCoffeeOrdinary.makeCoffee();
 		
-		//小杯咖啡  原味
+		//灏忔澂鍜栧暋  鍘熷懗
 		SmallCoffee smallCoffeeOrdinary = new SmallCoffee(implOrdinary);
 		smallCoffeeOrdinary.makeCoffee();
 				
-		//大杯咖啡  加糖
+		//澶ф澂鍜栧暋  鍔犵硸
 		LargeCoffee largeCoffeeSugar = new LargeCoffee(implSugar);
 		largeCoffeeSugar.makeCoffee();
 		
-		//小杯咖啡  加糖
+		//灏忔澂鍜栧暋  鍔犵硸
 		SmallCoffee smallCoffeeSugar = new SmallCoffee(implSugar);
 		smallCoffeeSugar.makeCoffee();
 	}

@@ -2,17 +2,17 @@ package me.lj.pattern.observer;
 
 public class Client {
 	public static void main(String[] args) {
-		//被观察者，这里就是用户订阅的电视剧
+		//琚瀵熻?咃紝杩欓噷灏辨槸鐢ㄦ埛璁㈤槄鐨勭數瑙嗗墽
 		Teleplay teleplay = new Teleplay();
-		//观察者，这里就是订阅用户
-		User user1 = new User("小明");
-		User user2 = new User("小光");
-		User user3 = new User("小兰");
-		//订阅
+		//瑙傚療鑰咃紝杩欓噷灏辨槸璁㈤槄鐢ㄦ埛
+		User user1 = new User("灏忔槑");
+		User user2 = new User("灏忓厜");
+		User user3 = new User("灏忓叞");
+		//璁㈤槄
 		teleplay.register(user1);
 		teleplay.register(user2);
 		teleplay.register(user3);
-		//推送新消息
-		teleplay.push("xxx电视剧");
+		//鎺ㄩ?佹柊娑堟伅
+		teleplay.push("xxx鐢佃鍓?");
 	}
 }

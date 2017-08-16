@@ -2,7 +2,7 @@ package me.lj.pattern.state;
 
 /**
  * 
- * 关机状态，操作无结果
+ * 鍏虫満鐘舵?侊紝鎿嶄綔鏃犵粨鏋?
  * 
  * */
 public class PowerOffState implements TVState{

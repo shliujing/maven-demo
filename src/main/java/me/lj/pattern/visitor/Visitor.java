@@ -2,12 +2,12 @@ package me.lj.pattern.visitor;
 
 public interface Visitor {
 	/**
-	 * 访问攻城狮类型
+	 * 璁块棶鏀诲煄鐙被鍨?
 	 */
 	public void visit(Engineer engineer);
 	
 	/**
-	 * 访问经理类型
+	 * 璁块棶缁忕悊绫诲瀷
 	 */
 	public void visit(Manager manager);
 }

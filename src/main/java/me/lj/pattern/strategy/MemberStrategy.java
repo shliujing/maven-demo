@@ -2,9 +2,9 @@ package me.lj.pattern.strategy;
 
 public interface MemberStrategy {
 	/**
-     * 计算图书的价格
-     * @param booksPrice    图书的原价
-     * @return    计算出打折后的价格
+     * 璁＄畻鍥句功鐨勪环鏍?
+     * @param booksPrice    鍥句功鐨勫師浠?
+     * @return    璁＄畻鍑烘墦鎶樺悗鐨勪环鏍?
      */
     public double calcPrice(double booksPrice);
 }

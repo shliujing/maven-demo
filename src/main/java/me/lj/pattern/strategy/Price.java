@@ -1,20 +1,20 @@
 package me.lj.pattern.strategy;
 
 public class Price {
-    //持有一个具体的策略对象
+    //鎸佹湁涓?涓叿浣撶殑绛栫暐瀵硅薄
     private MemberStrategy strategy;
     /**
-     * 构造函数，传入一个具体的策略对象
-     * @param strategy    具体的策略对象
+     * 鏋勯?犲嚱鏁帮紝浼犲叆涓?涓叿浣撶殑绛栫暐瀵硅薄
+     * @param strategy    鍏蜂綋鐨勭瓥鐣ュ璞?
      */
     public Price(MemberStrategy strategy){
         this.strategy = strategy;
     }
     
     /**
-     * 计算图书的价格
-     * @param booksPrice    图书的原价
-     * @return    计算出打折后的价格
+     * 璁＄畻鍥句功鐨勪环鏍?
+     * @param booksPrice    鍥句功鐨勫師浠?
+     * @return    璁＄畻鍑烘墦鎶樺悗鐨勪环鏍?
      */
     public double quote(double booksPrice){
         return this.strategy.calcPrice(booksPrice);

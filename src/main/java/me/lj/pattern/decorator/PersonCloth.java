@@ -1,8 +1,8 @@
-package com.zl.pattern.decorator;
+package me.lj.pattern.decorator;
 
 public class PersonCloth extends Person{
 	
-	protected Person mPerson; //保持一个Person类的引用
+	protected Person mPerson; //淇濇寔涓�涓狿erson绫荤殑寮曠敤
 	
 	public PersonCloth(Person mPerson) {
 		super();

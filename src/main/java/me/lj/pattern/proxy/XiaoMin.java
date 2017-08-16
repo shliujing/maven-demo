@@ -4,26 +4,26 @@ public class XiaoMin implements ILawsuit{
 
 	@Override
 	public void submit() {
-		//小民申请仲裁
-		System.out.println("老板年底拖欠工资，特此申请仲裁！");
+		//灏忔皯鐢宠浠茶
+		System.out.println("鑰佹澘骞村簳鎷栨瑺宸ヨ祫锛岀壒姝ょ敵璇蜂徊瑁侊紒");
 	}
 
 	@Override
 	public void burden() {
-		//小民提交证据
-		System.out.println("这是合同书和过去一年的银行工资流水！");
+		//灏忔皯鎻愪氦璇佹嵁
+		System.out.println("杩欐槸鍚堝悓涔﹀拰杩囧幓涓?骞寸殑閾惰宸ヨ祫娴佹按锛?");
 	}
 
 	@Override
 	public void defend() {
-		//铁证如山
-		System.out.println("证据确凿，不需要再说什么！");
+		//閾佽瘉濡傚北
+		System.out.println("璇佹嵁纭嚳锛屼笉闇?瑕佸啀璇翠粈涔堬紒");
 	}
 
 	@Override
 	public void finish() {
-		//结果
-		System.out.println("诉讼成功，判决老板即日起七天内结算工资！");
+		//缁撴灉
+		System.out.println("璇夎鎴愬姛锛屽垽鍐宠?佹澘鍗虫棩璧蜂竷澶╁唴缁撶畻宸ヨ祫锛?");
 	}
 
 }

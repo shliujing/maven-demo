@@ -1,7 +1,7 @@
 package me.lj.pattern.state;
 
 /**
- * 电视状态接口，定义了电视的操作函数
+ * 鐢佃鐘舵?佹帴鍙ｏ紝瀹氫箟浜嗙數瑙嗙殑鎿嶄綔鍑芥暟
  * 
  * */
 public interface TVState {

@@ -1,6 +1,6 @@
 package me.lj.pattern.adapter;
 
-//Adapter½ÇÉ«
+//Adapterè§’è‰²
 public class Volt220 {
 	public int getVolt220(){
 		return 220;

@@ -1,20 +1,20 @@
-package com.zl.pattern.facade;
+package me.lj.pattern.facade;
 
 public class SamsungCamera implements Camera{
 
 	@Override
 	public void open() {
-		System.out.println("打开相机");
+		System.out.println("鎵撳紑鐩告満");
 	}
 
 	@Override
 	public void takePicture() {
-		System.out.println("拍照");
+		System.out.println("鎷嶇収");
 	}
 
 	@Override
 	public void close() {
-		System.out.println("关闭相机");
+		System.out.println("鍏抽棴鐩告満");
 	}
 
 }
