@@ -1,13 +1,13 @@
-package me.lj.pattern.facade;
+package com.zl.pattern.facade;
 
 public class Client {
 
 	public static void main(String[] args) {
 		MobilePhone mobilePhone = new MobilePhone();
 		
-		//О©╫О©╫О©╫О©╫
+		//едуу
 		mobilePhone.takePicture();
-		//О©╫О©╫ф╣О©╫О©╫О©╫О©╫
+		//йсф╣адлЛ
 		mobilePhone.videoChat();
 	}
 

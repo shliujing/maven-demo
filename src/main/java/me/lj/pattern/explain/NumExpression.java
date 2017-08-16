@@ -1,4 +1,4 @@
-package me.lj.pattern.explain;
+package com.zl.pattern.explain;
 
 public class NumExpression extends ArithemticExpression{
 

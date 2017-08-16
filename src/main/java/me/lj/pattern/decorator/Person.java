@@ -1,8 +1,8 @@
-package me.lj.pattern.decorator;
+package com.zl.pattern.decorator;
 
 public abstract class Person {
 	/**
-	 * Person锟斤拷锟斤拷一锟斤拷锟斤拷锟脚的筹拷锟襟方凤拷 
+	 * Person下有一个穿着的抽象方法 
 	 */
 	public abstract void dressed();
 }

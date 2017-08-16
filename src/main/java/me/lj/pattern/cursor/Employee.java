@@ -1,10 +1,10 @@
-package me.lj.pattern.cursor;
+package com.zl.pattern.cursor;
 
 public class Employee {
 
-	private String name;// ï¿½ï¿½ï¿½ï¿½
-	private int age;// ï¿½ï¿½ï¿½ï¿½
-	private String sex;// ï¿½Ô±ï¿½
+	private String name;// ÐÕÃû
+	private int age;// ÄêÁä
+	private String sex;// ÐÔ±ð
 	private String position;// Ö°Î»
 
 	public Employee(String name, int age, String sex, String position) {
@@ -15,7 +15,7 @@ public class Employee {
 		this.position = position;
 	}
 
-	// ï¿½ò»¯´ï¿½ï¿½ë£¬Ê¡ï¿½ï¿½setterï¿½ï¿½getterï¿½ï¿½ï¿½ï¿½
+	// ¼ò»¯´úÂë£¬Ê¡ÂÔsetterºÍgetter·½·¨
 
 	@Override
 	public String toString() {

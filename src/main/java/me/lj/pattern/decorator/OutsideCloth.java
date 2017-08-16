@@ -1,4 +1,4 @@
-package me.lj.pattern.decorator;
+package com.zl.pattern.decorator;
 
 public class OutsideCloth extends PersonCloth{
 
@@ -7,24 +7,24 @@ public class OutsideCloth extends PersonCloth{
 	}
 
 	/**
-	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
+	 * ´©¶ÌÐä 
 	 */
 	private void dressShirt(){
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+		System.out.println("´©¼þ¶ÌÐä");
 	}
 	
 	/**
-	 * ï¿½ï¿½Å£ï¿½Ð¿ï¿½ 
+	 * ´©Å£×Ð¿ã 
 	 */
 	private void dressJean(){
-		System.out.println("ï¿½ï¿½Å£ï¿½Ð¿ï¿½");
+		System.out.println("´©Å£×Ð¿ã");
 	}
 	
 	/**
-	 * ï¿½ï¿½Ð¬ï¿½ï¿½ 
+	 * ´©Ð¬×Ó 
 	 */
 	private void dressShoes(){
-		System.out.println("ï¿½ï¿½Ð¬ï¿½ï¿½ ");
+		System.out.println("´©Ð¬×Ó ");
 	}
 	
 	@Override

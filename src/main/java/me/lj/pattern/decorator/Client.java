@@ -1,15 +1,15 @@
-package me.lj.pattern.decorator;
+package com.zl.pattern.decorator;
 
 public class Client {
 	public static void main(String[] args) {
-		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ðºï¿½
+		//Ê×ÏÈÓÐÒ»¸öÄÐº¢
 		Person person = new Boy();
 		
-		//ï¿½Ú¼ï¿½
+		//ÔÚ¼Ò
 		PersonCloth personCloth = new HomeCloth(person);
 		personCloth.dressed();
 		System.out.println("--------------");
-		//ï¿½ï¿½ï¿½ï¿½
+		//³öÃÅ
 		PersonCloth personCloth1 = new OutsideCloth(person);
 		personCloth1.dressed();
 		

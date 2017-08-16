@@ -1,13 +1,13 @@
-package me.lj.pattern.facade;
+package com.zl.pattern.facade;
 
 public interface Camera {
 
-	//ï¿½ï¿½ï¿½ï¿½ï¿½
+	//´ò¿ªÏà»ú
 	public void open();
 		
-	//ï¿½ï¿½ï¿½ï¿½
+	//ÅÄÕÕ
 	public void takePicture();
 	
-	//ï¿½Ø±ï¿½ï¿½ï¿½ï¿½
+	//¹Ø±ÕÏà»ú
 	public void close();
 }

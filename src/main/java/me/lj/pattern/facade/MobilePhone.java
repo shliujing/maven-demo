@@ -1,4 +1,4 @@
-package me.lj.pattern.facade;
+package com.zl.pattern.facade;
 
 public class MobilePhone {
 
@@ -23,7 +23,7 @@ public class MobilePhone {
 	}
 	
 	public void videoChat(){
-		System.out.println("--> О©╫О©╫ф╣О©╫О©╫О©╫О©╫О©╫м╗О©╫О©╫");
+		System.out.println("--> йсф╣адлЛ╫см╗жп");
 		mCamera.open();
 		mPhone.dail();
 	}

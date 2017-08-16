@@ -1,33 +1,33 @@
-package me.lj.pattern.explain;
+package com.zl.pattern.explain;
 
 import java.util.Stack;
 
 public class Calculator {
 
-	//ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½StackÕ»ï¿½ï¿½ï¿½æ²¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ØµÄ½ï¿½ï¿½ï¿½ï¿½ï¿½
+	//ÉùÃ÷Ò»¸öStackÕ»´¢´æ²¢²Ù×÷ËùÓĞÏà¹ØµÄ½âÊÍÆ÷
 	private Stack<ArithemticExpression> mExpStack = new Stack<ArithemticExpression>();
 	
 	public Calculator(String expression){
-		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ArithemticExpressionï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßµï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½
+		//ÉùÃ÷Á½¸öArithemticExpressionÀàĞÍµÄÁÙÊ±±äÁ¿£¬´¢´æÔËËã·û×óÓÒÁ½±ßµÄÊı×Ö½âÊÍÆ÷
 		ArithemticExpression exp1,exp2;
 		
-		//ï¿½ï¿½ï¿½İ¿Õ¸ï¿½Ö¸ï¿½ï¿½ï¿½Ê½ï¿½Ö·ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½1 + 2 + 3 + 4)
+		//¸ù¾İ¿Õ¸ñ·Ö¸î±í´ïÊ½×Ö·û´®(±ÈÈç1 + 2 + 3 + 4)
 		String[] elements = expression.split(" ");
 		
 		/*
-		 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		 * ±éÀú±í´ïÊ½ÔªËØÊı×é
 		 */
 		for(int i = 0; i < elements.length; i++){
 			/*
-			 * ï¿½Ğ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			 * ÅĞ¶ÏÔËËã·ûºÅ
 			 */
 			switch (elements[i].charAt(0)) {
 			case '+':
-				//ï¿½ï¿½ï¿½ï¿½Ç¼ÓºÅ£ï¿½ï¿½ï¿½Õ»ï¿½ĞµÄ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßµÄ½ï¿½ï¿½ï¿½ï¿½ï¿½
+				//Èç¹ûÊÇ¼ÓºÅ£¬Ôò½«Õ»ÖĞµÄ½âÊÍÆ÷µ¯³ö×÷ÎªÔËËã·ûºÅ×ó±ßµÄ½âÊÍÆ÷
 				exp1 = mExpStack.pop();
-				//Í¬Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â±ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½Ø¹ï¿½ï¿½ï¿½ÎªÒ»ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½
+				//Í¬Ê±½«ÔËËã·ûºÅÊı×éÏÂ±êµÄÏÂÒ»¸öÔªËØ¹¹ÔìÎªÒ»¸öÊı×Ö½âÊÍÆ÷
 				exp2 = new NumExpression(Integer.parseInt(elements[++i]));
-				//Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½	
+				//Í¨¹ıÉÏÃæµÄÁ½¸öÊı×Ö½âÊÍÆ÷¹¹Ôì¼Ó·¨ÔËËã½âÊÍÆ÷	
 				mExpStack.push(new AdditionExpression(exp1, exp2));
 				break;
 			case '-':
@@ -37,7 +37,7 @@ public class Calculator {
 				break;
 			default:
 				/*
-				 * ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ö£ï¿½Ö±ï¿½Ó¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½Õ»
+				 * Èç¹ûÎªÊı×Ö£¬Ö±½Ó¹¹ÔìÊı×Ö½âÊÍÆ÷²¢Ñ¹ÈëÕ»
 				 */
 				mExpStack.push(new NumExpression(Integer.valueOf(elements[i])));
 				break;
@@ -46,9 +46,9 @@ public class Calculator {
 	}
 	
 	/**
-	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	 * ¼ÆËã½á¹û
 	 * 
-	 * @return ï¿½ï¿½ï¿½ÕµÄ¼ï¿½ï¿½ï¿½ï¿½ï¿½
+	 * @return ×îÖÕµÄ¼ÆËã½á¹û
 	 */
 	public int calculate(){
 		return mExpStack.pop().interpreter();

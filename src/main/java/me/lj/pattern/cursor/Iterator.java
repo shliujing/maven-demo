@@ -1,16 +1,16 @@
-package me.lj.pattern.cursor;
+package com.zl.pattern.cursor;
 
 public interface Iterator {
 
 	/**
-	 * 锟角凤拷锟斤拷锟斤拷一锟斤拷元锟斤拷 
+	 * 是否还有下一个元素 
 	 * 
-	 * @return true锟斤拷示锟叫ｏ拷false锟斤拷示没锟斤拷
+	 * @return true表示有，false表示没有
 	 */
 	boolean hasNext();
 	
 	/**
-	 * 锟斤拷锟截碉拷前元锟截ｏ拷锟斤拷锟斤拷位锟斤拷锟斤拷锟斤拷锟斤拷一位
+	 * 返回当前元素，并将位置移至下一位
 	 */
 	Object next();
 }

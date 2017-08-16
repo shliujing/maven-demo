@@ -1,11 +1,11 @@
-package me.lj.pattern.explain;
+package com.zl.pattern.explain;
 
 public abstract class ArithemticExpression {
 	/**
-	 * ï¿½ï¿½ï¿½ï¿½Ä½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
-	 * ï¿½ï¿½ï¿½ï¿½Ä½ï¿½ï¿½ï¿½ï¿½ß¼ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
+	 * ³éÏóµÄ½âÎö·½·¨ 
+	 * ¾ßÌåµÄ½âÎöÂß¼­ÓÉ¾ßÌåµÄ×ÓÀàÊµÏÖ
 	 * 
-	 * @return ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+	 * @return ½âÎöµÃµ½¾ßÌåµÄÖµ
 	 */
 	public abstract int interpreter();
 }

@@ -1,8 +1,8 @@
-package me.lj.pattern.decorator;
+package com.zl.pattern.decorator;
 
 public class PersonCloth extends Person{
 	
-	protected Person mPerson; //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Personï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	protected Person mPerson; //±£³ÖÒ»¸öPersonÀàµÄÒıÓÃ
 	
 	public PersonCloth(Person mPerson) {
 		super();

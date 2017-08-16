@@ -1,4 +1,4 @@
-package me.lj.pattern.cursor;
+package com.zl.pattern.cursor;
 
 
 public class CompanyHui implements Company{
@@ -6,9 +6,9 @@ public class CompanyHui implements Company{
 	private Employee[] array = new Employee[3];
 	
 	public CompanyHui(){
-		array[0] = new Employee("ï¿½Ô¸ï¿½", 28, "ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½Ô³");
-		array[1] = new Employee("Ð¡ï¿½ï¿½", 23, "ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½Ô³");
-		array[2] = new Employee("Ð¡ï¿½ï¿½", 25, "ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½Ô³");
+		array[0] = new Employee("»Ô¸ç", 28, "ÄÐ", "³ÌÐòÔ³");
+		array[1] = new Employee("Ð¡ºì", 23, "ÄÐ", "³ÌÐòÔ³");
+		array[2] = new Employee("Ð¡»Ô", 25, "ÄÐ", "³ÌÐòÔ³");
 	}
 
 	public Employee[] getEmployees(){

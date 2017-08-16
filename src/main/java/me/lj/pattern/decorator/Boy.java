@@ -1,11 +1,11 @@
 
-package me.lj.pattern.decorator;
+package com.zl.pattern.decorator;
 
 public class Boy extends Person{
 
 	@Override
 	public void dressed() {
-		System.out.println("Boyï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¿ï¿½");
+		System.out.println("Boy´©ÁËÄÚÒÂÄÚ¿ã");
 	}
 
 }

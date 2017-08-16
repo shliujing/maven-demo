@@ -1,15 +1,15 @@
-package me.lj.pattern.facade;
+package com.zl.pattern.facade;
 
 public class PhoneImpl implements Phone{
 
 	@Override
 	public void dail() {
-		System.out.println("ï¿½ï¿½ç»°");
+		System.out.println("´òµç»°");
 	}
 
 	@Override
 	public void hangup() {
-		System.out.println("ï¿½Ò¶ï¿½");
+		System.out.println("¹Ò¶Ï");
 	}
 
 }
