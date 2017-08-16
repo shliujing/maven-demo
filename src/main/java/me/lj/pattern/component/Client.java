@@ -2,34 +2,34 @@ package me.lj.pattern.component;
 
 public class Client {
 	public static void main(String[] args) {
-		//����һ��Ŀ¼�����ʾC�̸�Ŀ¼
+		//构造一个目录对象表示C盘根目录
 		Dir diskC = new Folder("C");
-		
-		//C�̸�Ŀ¼����һ���ļ�Log.txt
+
+		//C盘根目录下有一个文件Log.txt
 		diskC.addDir(new File("Log.txt"));
-		
-		//C�̸�Ŀ¼��������Ŀ¼Windows��PerfLogs��Program File
+
+		//C盘根目录下有三个目录Windows、PerfLogs、Program File
 		Dir dirWin = new Folder("Windows");
-		
-		//WindowsĿ¼�����ļ�explorer.exe
+
+		//Windows目录下有文件explorer.exe
 		dirWin.addDir(new File("explorer.exe"));
 		diskC.addDir(dirWin);
-		
-		//PerfLogsĿ¼
+
+		//PerfLogs目录
 		Dir dirPer = new Folder("PerfLogs");
-		
-		//PerfLogsĿ¼�����ļ�null.txt
+
+		//PerfLogs目录下有文件null.txt
 		dirPer.addDir(new File("null.txt"));
 		diskC.addDir(dirPer);
-		
-		//Program FileĿ¼
+
+		//Program File目录
 		Dir dirPro = new Folder("Program File");
-		
-		//Program FileĿ¼�����ļ�ftp.txt
+
+		//Program File目录下有文件ftp.txt
 		dirPro.addDir(new File("ftp.txt"));
 		diskC.addDir(dirPro);
-		
-		//��ӡ���ļ��ṹ
+
+		//打印出文件结构
 		diskC.print();
 	}
 }

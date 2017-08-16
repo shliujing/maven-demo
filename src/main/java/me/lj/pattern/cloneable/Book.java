@@ -53,7 +53,7 @@ public class Book implements Cloneable{
     }
 
     @SuppressWarnings("unchecked")
-	@Override
+    @Override
     protected Object clone() throws CloneNotSupportedException {
 
         Book book = (Book)super.clone();
@@ -64,7 +64,7 @@ public class Book implements Cloneable{
     public void showBook(){
         System.out.println("=====Start=====");
 
-        System.out.println("title��"+title);
+        System.out.println("title："+title);
         for(String img : image){
             System.out.println("image name:"+img);
         }

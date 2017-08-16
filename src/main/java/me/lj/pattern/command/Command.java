@@ -2,12 +2,12 @@ package me.lj.pattern.command;
 
 public interface Command {
 	/**
-	 * ����ִ�з���
+	 * 命令执行方法
 	 */
 	void execute();
-	
+
 	/**
-	 * ��ȡ��������
+	 * 获取命令类型
 	 */
 	void getCommand();
 }

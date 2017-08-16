@@ -2,46 +2,46 @@ package me.lj.pattern.iterator;
 
 public abstract class Leader {
 	/**
-	 * �ϼ��쵼������
+	 * 上级领导处理者
 	 */
 	protected Leader nextHandler;
-	
+
 	/**
-	 * ����������
-	 * 
-	 * @param money �������ı��˶�� 
-	 * 
+	 * 处理报账请求
+	 *
+	 * @param money 能批复的报账额度
+	 *
 	 */
 	public final void handleRequest(int money){
 		System.out.println(getLeader());
 		if(money <=limit()){
 			handle(money);
 		}else{
-			System.out.println("���˶�Ȳ��㣬�ύ�쵼");
+			System.out.println("报账额度不足，提交领导");
 			if(null != nextHandler){
 				nextHandler.handleRequest(money);
 			}
 		}
 	}
-	
+
 	/**
-	 * �����������Ķ��Ȩ��
-	 * 
-	 * @return ���
+	 * 自身能批复的额度权限
+	 *
+	 * @return 额度
 	 */
 	public abstract int limit();
-	
+
 	/**
-	 * ��������Ϊ
-	 * 
-	 * @param money ������
+	 * 处理报账行为
+	 *
+	 * @param money 具体金额
 	 */
 	public abstract void handle(int money);
-	
+
 	/**
-	 * ��ȡ������
-	 * 
-	 * @return ������
+	 * 获取处理者
+	 *
+	 * @return 处理者
 	 */
 	public abstract String getLeader();
 }

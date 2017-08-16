@@ -1,2 +1,10 @@
-"# maven-demo" 
-"# maven-demo" 
+# maven-demo
+
+## patter
+
+这几个是乱码的
+
+- facade
+- explain
+- cursor
+- decorator

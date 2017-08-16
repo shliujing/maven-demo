@@ -2,14 +2,14 @@ package me.lj.pattern.flyweight;
 
 import java.util.Random;
 
-//��Ʊ
+//火车票
 public class TrainTicket implements Ticket{
 
-	public String from; // ʼ����
-	public String to; // Ŀ�ĵ�
-	public String bunk; //��λ
-	public int price; //�۸�
-	
+	public String from; // 始发地
+	public String to; // 目的地
+	public String bunk; //铺位
+	public int price; //价格
+
 	public TrainTicket(String from, String to) {
 		this.from = from;
 		this.to = to;
@@ -18,7 +18,7 @@ public class TrainTicket implements Ticket{
 	@Override
 	public void showTicketInfo(String bunk) {
 		price = new Random().nextInt(300);
-		System.out.println("���� �� " + from + " �� " + to + "��" + bunk + "��Ʊ" + ", �۸�" + price);
+		System.out.println("购买 从 " + from + " 到 " + to + "的" + bunk + "火车票" + ", 价格：" + price);
 	}
 
 }

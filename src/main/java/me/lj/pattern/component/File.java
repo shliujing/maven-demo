@@ -10,17 +10,17 @@ public class File extends Dir{
 
 	@Override
 	public void addDir(Dir dir) {
-		throw new UnsupportedOperationException("�ļ�����֧�ָò�����");
+		throw new UnsupportedOperationException("文件对象不支持该操作！");
 	}
 
 	@Override
 	public void rmDir(Dir dir) {
-		throw new UnsupportedOperationException("�ļ�����֧�ָò�����");
+		throw new UnsupportedOperationException("文件对象不支持该操作！");
 	}
 
 	@Override
 	public void clear() {
-		throw new UnsupportedOperationException("�ļ�����֧�ָò�����");
+		throw new UnsupportedOperationException("文件对象不支持该操作！");
 	}
 
 	@Override
@@ -30,7 +30,7 @@ public class File extends Dir{
 
 	@Override
 	public List<Dir> getFiles() {
-		throw new UnsupportedOperationException("�ļ�����֧�ָò�����");
+		throw new UnsupportedOperationException("文件对象不支持该操作！");
 	}
 
 }

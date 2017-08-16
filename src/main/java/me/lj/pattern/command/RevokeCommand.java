@@ -2,16 +2,16 @@ package me.lj.pattern.command;
 
 public class RevokeCommand implements Command{
 
-	//����һ��������������Ϸ���������
+	//持有一个接受推箱子游戏对象的引用
 	private PushBox pushBox;
-		
+
 	public RevokeCommand(PushBox pushBox){
 		this.pushBox = pushBox;
 	}
-	
+
 	@Override
 	public void execute() {
-		//���þ�������
+		//调用具体命令
 		pushBox.revoke();;
 	}
 	@Override

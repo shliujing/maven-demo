@@ -2,8 +2,8 @@ package me.lj.pattern.factory;
 
 public abstract class Product {
 	/**
-	 * ��Ʒ��ĳ��󷽷�
-	 * �ɾ���Ĳ�Ʒ��ȥʵ��
+	 * 产品类的抽象方法
+	 * 由具体的产品类去实现
 	 * */
 	public abstract void method();
 }

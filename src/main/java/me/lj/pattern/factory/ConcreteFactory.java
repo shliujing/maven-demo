@@ -2,7 +2,7 @@ package me.lj.pattern.factory;
 
 public class ConcreteFactory extends Factory {
 	/**
-	 * ���幤����
+	 * 具体工厂类
 	 * */
 	@SuppressWarnings("unchecked")
 	@Override
